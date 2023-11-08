@@ -20,3 +20,4 @@ except ValueError:
 else:
     print("НОД созданной функции: ", special_nod(pervoe, vtoroe), "НОД существующей функции: ",
           math.gcd(pervoe, vtoroe))
+    print("разница между числами: ", pervoe - vtoroe)
