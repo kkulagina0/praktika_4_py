@@ -1,7 +1,7 @@
 import random
-
-
-print("Правила игры: \n перед вами лежит случайное число камней из диапазона от 1 до 30\n вы должны забрать от 1 до 3 камней так, чтобы по итогу противнику (то есть компьютеру) остался 1 камень. Удачи ")
+print("1234")
+print(
+    "Правила игры: \n перед вами лежит случайное число камней из диапазона от 1 до 30\n вы должны забрать от 1 до 3 камней так, чтобы по итогу противнику (то есть компьютеру) остался 1 камень. Удачи ")
 N = random.randint(4, 31)
 while N > 0:
     try:
@@ -20,9 +20,9 @@ while N > 0:
         if N == 1:
             print("Вы победили!")
             break
-        comp_beret = random.randint(1,4)
+        comp_beret = random.randint(1, 4)
         while N - comp_beret < 1:
-            comp_beret = random.randint(1,4)
+            comp_beret = random.randint(1, 4)
             continue
         print("Компьютер взял", comp_beret, "камня")
         N -= comp_beret
